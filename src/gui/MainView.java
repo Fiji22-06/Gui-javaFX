@@ -35,9 +35,11 @@ public class MainView {
         // Mengatur agar tombol memenuhi lebar sidebar dan menambahkan class CSS
         btnHome.setMaxWidth(Double.MAX_VALUE);
         btnHome.getStyleClass().add("nav-button");
+        btnHome.setOnAction(e -> mainLayout.setCenter(new DashboardView().getView()));
 
         btnData.setMaxWidth(Double.MAX_VALUE);
         btnData.getStyleClass().add("nav-button");
+        
 
         btnSettings.setMaxWidth(Double.MAX_VALUE);
         btnSettings.getStyleClass().add("nav-button");
@@ -52,7 +54,7 @@ public class MainView {
         contentArea.setPadding(new Insets(20));
 
         Label welcomeText = new Label("Selamat Datang di Aplikasi");
-        welcomeText.setStyle("-fx-font-size: 20px;"); // Inline style kecil dpp, tapi sebaiknya dipindah juga
+        welcomeText.getStyleClass().add("welcome-text"); // Menggunakan class CSS
 
         contentArea.getChildren().add(welcomeText);
         return contentArea;
