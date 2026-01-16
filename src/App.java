@@ -16,7 +16,7 @@ public class App extends Application {
         // Menghubungkan file CSS
         scene.getStylesheets().add(getClass().getResource("/style.css").toExternalForm());
 
-        primaryStage.setTitle("Aplikasi JavaFX Rapi");
+        primaryStage.setTitle("Aplikasi JavaFX");
         primaryStage.setScene(scene);
         primaryStage.show();
     }

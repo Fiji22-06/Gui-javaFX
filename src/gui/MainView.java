@@ -30,7 +30,6 @@ public class MainView {
 
         Button btnHome = new Button("Dashboard");
         Button btnData = new Button("Data Mahasiswa");
-        Button btnSettings = new Button("Pengaturan");
 
         // Mengatur agar tombol memenuhi lebar sidebar dan menambahkan class CSS
         btnHome.setMaxWidth(Double.MAX_VALUE);
@@ -41,11 +40,7 @@ public class MainView {
         btnData.getStyleClass().add("nav-button");
         btnData.setOnAction(e -> mainLayout.setCenter(new DataView().getView()));
 
-
-        btnSettings.setMaxWidth(Double.MAX_VALUE);
-        btnSettings.getStyleClass().add("nav-button");
-
-        sidebar.getChildren().addAll(menuLabel, btnHome, btnData, btnSettings);
+        sidebar.getChildren().addAll(menuLabel, btnHome, btnData);
         return sidebar;
     }
 

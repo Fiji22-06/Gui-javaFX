@@ -5,7 +5,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import data_mahasiswa.mahasiswa;
 import data_mahasiswa.MahasiswaData;
-import data_mahasiswa.MahasiswaFileUtil;
+// import data_mahasiswa.MahasiswaFileUtil;
 
 public class DashboardView {
 
@@ -40,7 +40,7 @@ public class DashboardView {
             try {
                 int umur = Integer.parseInt(umurStr);
                 MahasiswaData.listMahasiswa.add(new mahasiswa(nama, nim, umur));
-                MahasiswaFileUtil.simpanKeFile();
+                // MahasiswaFileUtil.simpanKeFile();
                 info.setText("✅ Data berhasil disimpan!");
 
                 tfNama.clear();
