@@ -39,7 +39,8 @@ public class MainView {
 
         btnData.setMaxWidth(Double.MAX_VALUE);
         btnData.getStyleClass().add("nav-button");
-        
+        btnData.setOnAction(e -> mainLayout.setCenter(new DataView().getView()));
+
 
         btnSettings.setMaxWidth(Double.MAX_VALUE);
         btnSettings.getStyleClass().add("nav-button");
